@@ -1,0 +1,29 @@
+
+input{
+    display: block;
+
+    
+}
+
+.container{
+max-width: 20vw;
+display: flex;
+ flex-direction: column;
+margin: auto auto;
+
+text-align: center;
+}
+
+
+
+label{
+text-transform: uppercase;
+color: hsl(132, 15%, 45%);
+}
+
+fieldset{
+border:2px hsl(132, 15%, 45%) solid;
+}
+legend{
+    color:hsl(132, 15%, 45%) ;
+}

@@ -5,15 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     
-<button id="btn1">btn1</button>
-<button id="btn2">btn2</button>
+    <div class="container">
+<fieldset>
+    <legend>Api Form</legend>
+        <form onsubmit="postMovie(event)">
+    <label for="imginput">image of movie</label>
+<input type="text" id="imginput" placeholder="img">
+
+<label for="linkinput"> link to movie</label>
+<input type="text" id="linkinput" placeholder="ling">
+
+<label for="nameinput">name  of movie</label>
+<input type="text" id="nameinput" placeholder="name">
+
+<label for="rateinput">rate the movie</label>
+<input type="number" id="rateinput" placeholder="rate">
+
+<label for="ssinput">synopsis</label>
+<input type="text" id="ssinput" placeholder="synopsis">
+
 <button id="btn3">btn3</button>
-<div id="display"></div>
-
-
+</fieldset>
+</form>
+<input type="search" id="inputserch" oninput="showMovie()">
+<ul id="fd"></ul>
+</div>
     <script src="/main.js"></script>
 </body>
 </html>
